@@ -1,7 +1,7 @@
 # AdBlock detection #
 The little script for determining whether the user uses AdBlock extension (or Adblock Plus).
 
-We provide fake advertisment js-file and if it wasn't executed then we determine AdBlock user.
+We provide fake advertisement js-file and if it wasn't executed then we determine AdBlock user.
 
 **[DEMO](http://chekalskiy.ru/adblock-detection/)**
 ## Contact ##
