@@ -3,18 +3,17 @@
     <title>AdBlock detection</title>
 </head>
 <body>
-    <h2 id="result">AdBlock is</h2>
+    <h2 id="result"></h2>
 
     <script src="advert.js"></script>
     <script>
-        if (!('ab' in window)) { window.ab = true; }
-
-        var result = document.getElementById('result');
-        if (window.ab == true) {
-            result.innerHTML = 'AdBlock is enabled';
-        } else {
-            result.innerHTML = 'AdBlock is disabled';
-        }
+        var hasAb = function() {
+            return !('ab' in window);
+        };
+        /*
+         * hasAb() //Returns true if Adblock enable
+        **/
+        document.getElementById('result').innerHTML = hasAb() ? 'Adblock is enabled' : 'Adblock is disabled';
     </script>
 </body>
 </html>
